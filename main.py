@@ -81,3 +81,25 @@ non-geographic       1.00      0.50      0.67         2
       accuracy                           0.75         4
      macro avg       0.83      0.75      0.73         4
   weighted avg       0.83      0.75      0.73         4"
+
+"Wikipedia Text Classification – Geographic vs. Non-Geographic
+
+This project implements a Naive Bayes classifier using Python and NLTK to classify Wikipedia pages as either geographic or non-geographic.
+
+🧠 Pipeline Overview
+
+Wikipedia Text Collection:
+Pages like "Madrid" and "Brazil" were used as geographic examples.
+Pages like "Mathematics" and "Philosophy" were used as non-geographic examples.
+Text Preprocessing:
+Tokenized using nltk.word_tokenize
+Lowercased, stopwords removed (nltk.corpus.stopwords)
+Words stemmed using PorterStemmer
+Feature Extraction:
+Used CountVectorizer (BoW, max 3000 features)
+Model Training:
+Trained MultinomialNB using scikit-learn
+Stratified train-test split (70% / 30%)
+Evaluation:
+Confusion matrix and classification report printed
+Handled zero_division safely"
