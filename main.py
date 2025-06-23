@@ -67,3 +67,17 @@ print(confusion_matrix(y_test, y_pred))
 
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred, zero_division=0))
+
+"result : Confusion Matrix:
+[[2 0]
+ [1 1]]
+
+Classification Report:
+                precision    recall  f1-score   support
+
+    geographic       0.67      1.00      0.80         2
+non-geographic       1.00      0.50      0.67         2
+
+      accuracy                           0.75         4
+     macro avg       0.83      0.75      0.73         4
+  weighted avg       0.83      0.75      0.73         4"
